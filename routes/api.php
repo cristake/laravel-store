@@ -2,8 +2,9 @@
 
 use Illuminate\Http\Request;
 
-Route::post('login', 'UserController@login');
-Route::post('register', 'UserController@register');
+Route::post('login', 'AuthController@login');
+Route::post('register', 'AuthController@register');
+
 Route::get('/products', 'ProductController@index');
 Route::post('/upload-file', 'ProductController@uploadFile');
 Route::get('/products/{product}', 'ProductController@show');
